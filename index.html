@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI UC Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BGMI UC Store</h1>
+    <p>Get your UC instantly via UPI QR Payment</p>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Choose Your UC Pack</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <h3>5000 UC</h3>
+          <p class="price">₹1000</p>
+          <button onclick="showPayment('5000 UC - ₹1000')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <h3>15000 UC</h3>
+          <p class="price">₹2000</p>
+          <button onclick="showPayment('15000 UC - ₹2000')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <h3>25000 UC</h3>
+          <p class="price">₹2500</p>
+          <button onclick="showPayment('25000 UC - ₹2500')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <h3>50000 UC</h3>
+          <p class="price">₹4500</p>
+          <button onclick="showPayment('50000 UC - ₹4500')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+          <h3>100000 UC</h3>
+          <p class="price">₹5000</p>
+          <button onclick="showPayment('100000 UC - ₹5000')">Buy Now</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="payment-box" class="hidden">
+      <h2>Complete Your Payment</h2>
+      <p id="selected-pack"></p>
+      <img src="qr.png" alt="Scan to Pay" class="qr">
+      <p>UPI ID: <strong>shariff.12@superyes</strong></p>
+      <p>Scan this QR code using your UPI app to pay.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 BGMI UC Store | Secure UPI Payments</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
